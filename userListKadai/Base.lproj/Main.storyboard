@@ -29,7 +29,7 @@
         <!--ユーザーリスト-->
         <scene sceneID="RV9-T8-Aik">
             <objects>
-                <viewController id="bJ5-c1-fkp" sceneMemberID="viewController">
+                <viewController id="bJ5-c1-fkp" customClass="ViewController" customModule="userListKadai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hKl-n4-i4L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,8 +51,15 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="永井優"/>
+                                                        <connections>
+                                                            <action selector="Nagai:" destination="rIY-Vh-UZY" eventType="touchUpInside" id="r45-ul-oXT"/>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="9CT-ZY-yTj"/>
+                                                            <action selector="Namebuton:" destination="rIY-Vh-UZY" eventType="touchUpInside" id="eqx-Kd-dh4"/>
+                                                            <action selector="Number1:" destination="rIY-Vh-UZY" eventType="touchUpInside" id="Oha-JZ-aHv"/>
+                                                            <action selector="nugaiYuu:" destination="rIY-Vh-UZY" eventType="touchUpInside" id="XMQ-eN-HQb"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXf-cx-7Oh">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXf-cx-7Oh">
                                                         <rect key="frame" x="0.0" y="70" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -60,8 +67,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="小野 勇輔"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="z9p-z7-fZb"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-K1-S6k">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdz-K1-S6k">
                                                         <rect key="frame" x="0.0" y="140" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -69,8 +79,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="豊岡 正紘"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="qzd-je-qDL"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JM5-2F-cad">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JM5-2F-cad">
                                                         <rect key="frame" x="0.0" y="210" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -78,8 +91,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="分目 祐太"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="7IZ-vl-me9"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-VL-eAy">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gw-VL-eAy">
                                                         <rect key="frame" x="0.0" y="280" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -87,8 +103,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="金田 祐作"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="RhH-xU-mTv"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayB-Pd-mMS">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayB-Pd-mMS">
                                                         <rect key="frame" x="0.0" y="350" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -96,8 +115,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="甲斐崎 香"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="OnO-Yb-Psd"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhF-AW-xON">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhF-AW-xON">
                                                         <rect key="frame" x="0.0" y="420" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -105,8 +127,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="志賀 大河"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="HdR-l1-T46"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMa-dY-I3F">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMa-dY-I3F">
                                                         <rect key="frame" x="0.0" y="490" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -114,8 +139,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="津國 由莉子"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="0FE-SW-dlW"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-u5-p1B">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-u5-p1B">
                                                         <rect key="frame" x="0.0" y="560" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -123,8 +151,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="中村泰輔"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="gBy-zs-hpQ"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ss-D7-Xwr">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ss-D7-Xwr">
                                                         <rect key="frame" x="0.0" y="630" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -132,8 +163,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="堀田 真"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="UTi-Em-8WI"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-8v-hDL">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-8v-hDL">
                                                         <rect key="frame" x="0.0" y="700" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -141,8 +175,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="田内翔太郎"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="6ij-D2-BwE"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJD-7s-MhC">
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJD-7s-MhC">
                                                         <rect key="frame" x="0.0" y="770" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -150,8 +187,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="福沢貴一"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="dle-zu-VHh"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-uz-I7K">
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-uz-I7K">
                                                         <rect key="frame" x="0.0" y="840" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -159,8 +199,11 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="平田奈那"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="sSS-r8-M6G"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-lz-As2">
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqq-lz-As2">
                                                         <rect key="frame" x="0.0" y="910" width="290" height="60"/>
                                                         <color key="backgroundColor" red="0.95305969199999996" green="1" blue="0.82447809230000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
@@ -168,6 +211,9 @@
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                         <state key="normal" title="吉澤優衣"/>
+                                                        <connections>
+                                                            <action selector="Namebuton:" destination="bJ5-c1-fkp" eventType="touchUpInside" id="vCg-ds-I5a"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -201,17 +247,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="ユーザーリスト" id="6O5-S8-VWe"/>
                     <connections>
-                        <segue destination="Qf7-Kr-UmC" kind="show" id="way-oL-YkR"/>
+                        <segue destination="Qf7-Kr-UmC" kind="show" identifier="nextSegue" id="way-oL-YkR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U6E-vC-CRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rIY-Vh-UZY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="114" y="211"/>
         </scene>
         <!--ユーザーデータ-->
         <scene sceneID="0MK-o1-dq1">
             <objects>
-                <viewController id="Qf7-Kr-UmC" sceneMemberID="viewController">
+                <viewController id="Qf7-Kr-UmC" customClass="NextViewController" customModule="userListKadai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qVY-ac-DT5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,6 +317,10 @@
                         <viewLayoutGuide key="safeArea" id="O6M-87-cBQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="ユーザーデータ" id="gBQ-IZ-yqQ"/>
+                    <connections>
+                        <outlet property="hobbyLabel" destination="7nS-dj-41D" id="6Bg-yp-zI9"/>
+                        <outlet property="nameLabel" destination="siM-S2-BZ3" id="cMs-eq-5Na"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FkW-4d-X80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

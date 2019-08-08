@@ -14,6 +14,7 @@
 		B181E84A22FAC7F8002F695F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B181E84822FAC7F8002F695F /* LaunchScreen.storyboard */; };
 		B181E85522FAC7F9002F695F /* userListKadaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181E85422FAC7F9002F695F /* userListKadaiTests.swift */; };
 		B181E86022FAC7F9002F695F /* userListKadaiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181E85F22FAC7F9002F695F /* userListKadaiUITests.swift */; };
+		B181E86E22FC1E12002F695F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B181E86D22FC1E12002F695F /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B181E85B22FAC7F9002F695F /* userListKadaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = userListKadaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B181E85F22FAC7F9002F695F /* userListKadaiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userListKadaiUITests.swift; sourceTree = "<group>"; };
 		B181E86122FAC7F9002F695F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B181E86D22FC1E12002F695F /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				B181E83F22FAC7F8002F695F /* AppDelegate.swift */,
 				B181E84122FAC7F8002F695F /* ViewController.swift */,
+				B181E86D22FC1E12002F695F /* NextViewController.swift */,
 				B181E84322FAC7F8002F695F /* Main.storyboard */,
 				B181E84622FAC7F8002F695F /* Assets.xcassets */,
 				B181E84822FAC7F8002F695F /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B181E84222FAC7F8002F695F /* ViewController.swift in Sources */,
+				B181E86E22FC1E12002F695F /* NextViewController.swift in Sources */,
 				B181E84022FAC7F8002F695F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
