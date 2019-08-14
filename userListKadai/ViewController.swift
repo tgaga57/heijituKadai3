@@ -9,16 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     // 遷移先に渡す名前
     var giveName:String = String()
-   
-    
+    // 遷移先に渡す趣味
     var giveHobby:String = String()
-    
     // 辞書型でキャンプ生の名前入れる。
     var name : [String] = ["永井 優","小野 勇輔","豊岡 正紘","分目 祐太","金田 祐作","甲斐崎 香","志賀 大河","津國 由莉子","中村泰輔","堀田 真","田内翔太郎","福沢貴一","平田奈那","吉澤優衣"]
-    
     // 辞書型でキャンプ生の趣味を入れる
     var hobbies : [String] = [
         "音楽が好き。ビジュアル系バンドが好きでバンドを組んでギターを弾いたりした。最近の趣味はバイクに乗ることとキックボクシング。",
@@ -35,48 +31,28 @@ class ViewController: UIViewController {
         "サッカー好きの脳筋です。今の趣味はバイトすること週6でみんな大好きcoffee mafiaで働いてますよ!いつでもおいで",
         "あだなは、はち(本名:なな)で、東京にくるたびにハチ公に挨拶しています。弾丸ひとり旅など、突然思い立ったことをやるのが好きです。東京生活わくわくしています〜",
         "ゲームが大好き。特にドラクエをこよなく愛しており、2018年の夏休みは約200時間をドラクエに費やした。他にもピアノや海外旅行や読書など様々な趣味がある。"
-        
     ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
-    
     @IBAction func Namebuton(_ sender: UIButton) {
-        
-        
         // ボタンを押された時のばタグ番号で名前と趣味を判断する
-        
         giveName = name[sender.tag]
         giveHobby = hobbies[sender.tag]
-        
         // 画面遷移
         // セグエイできめた遷移先の名前を入れる　遷移先の指定
         performSegue(withIdentifier: "nextSegue", sender: nil)
-        
     }
-    
     // 遷移前動作
     // 遷移先の名前、遷移先のdestination があっているかの確認
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "nextSegue", let nextVC = segue.destination as? NextViewController else {
             return
         }
-        
-        // 
         nextVC.receiveName = giveName
-        
-        //
         nextVC.receiveHobby = giveHobby
-        
     }
-    
-    
-    }
-    
-    
+}
+
 
 
