@@ -22,8 +22,6 @@ class NextViewController: UIViewController {
         hobbyLabel.text = receiveHobby
         // Do any additional setup after loading the view.
     }
-    
-    
     /*
      // MARK: - Navigation
      
@@ -33,5 +31,4 @@ class NextViewController: UIViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
 }
